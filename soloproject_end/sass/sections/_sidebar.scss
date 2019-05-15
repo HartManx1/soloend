@@ -1,0 +1,138 @@
+.sidebar {
+  background: #191919;
+  color: white;
+  line-height: 35px;
+  height: 100%;
+  text-align: left;
+  width: 60px;
+  position: fixed;
+  transition: 0.5s;
+  &.visible {
+    transition: 0.2s;
+    width: 188px;
+  }
+}
+
+.side > i {
+  padding-left: 10px;
+}
+
+.logo {
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-weight: bold;
+  font-size: 23px;
+  &.visible {
+    text-align: right;
+  }
+}
+
+.logo > a {
+  padding-right: 10px;
+}
+
+.toggle-menu {
+  padding-right: 10px;
+  text-decoration: none;
+  transition: 1s;
+  color: white;
+  &.visible {
+    transition: 1.5s;
+  }
+}
+
+.side {
+  font-size: 50px;
+}
+
+.ajax {
+  display: none;
+  color: #999999;
+  &.visible {
+    display: inline;
+  }
+}
+
+.michael {
+  color: #56819f;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.michael a {
+  width: 100px;
+  padding: 18px;
+}
+
+.menager {
+  display: none;
+  &.visible {
+    display: block;
+  }
+}
+
+.menager img {
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+}
+
+.photo {
+  margin-top: 15px;
+  margin-left: 7px;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+  &.visible {
+    display: none;
+  }
+}
+
+.info {
+  padding-left: 15px;
+  font-weight: 300;
+  height: 40px;
+  font-size: 15px;
+  color: #999999;
+}
+
+.info:hover {
+  background-color: #282828;
+  border-left: 4px solid #f58220;
+}
+
+//menager
+
+#manager {
+  margin-top: 60px;
+}
+
+.icon {
+  width: 40px;
+  color: #999999;
+}
+
+.men {
+  margin-top: 40px;
+  border-top: 1px solid #333333;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+  color: #808080;
+  padding: 5px 30px;
+  display: none;
+  &.visible {
+    display: block;
+  }
+}
+
+
+main img {
+  padding-bottom: 40px;
+}
