@@ -80,13 +80,6 @@
   padding-left: 20px;
 }
 
-.rightside {
-  text-align: left;
-  color: #333333;
-  font-family: Roboto;
-  line-height: 42px;
-  width: 25vh;
-}
 
 .addflex {
   display: flex;
@@ -102,4 +95,54 @@
 .rightwordlinks:hover {
   color: #ffa200;
   cursor: pointer;
+}
+
+.fish {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.razer {
+  border-bottom: 1px solid #e3e3e3;
+  width: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.razer:hover {
+  background: whitesmoke;
+}
+
+.razer {
+  border-bottom: 1px solid #e3e3e3;
+  width: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.razer:hover .rightside {
+  width: 50%;
+  margin: auto;
+  margin-right: unset;
+}
+
+.fish a {
+  text-decoration: none;
+  color: skyblue;
+}
+
+.razer:hover .layer {
+  display: inline-block;
+}
+
+.layer {
+  
+  line-height: 42px;
+  font-size: 13px;
+  color: #999999;
+
+}
+
+.link {
+  transform: rotate(45deg);
 }
