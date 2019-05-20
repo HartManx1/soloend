@@ -1,3 +1,26 @@
+.howtop:hover {
+  background-color: #f5f5f2;
+}
+
+.fix {
+  margin-right: -5px;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #9c9c9c;
+}
+
+.fa-chevron-down {
+  padding-left: 10px;
+}
+
+.jingle {
+  padding: 0;
+}
+
 nav {
   background-color: #ffffff;
   text-align: right;
@@ -9,7 +32,7 @@ nav a {
   color: #9c9c9c;
   text-decoration: none;
   width: 100px;
-  padding: 15px;
+  padding: 16px;
   border-left: 1.5px solid #e3e3e3;
 }
 
@@ -22,14 +45,9 @@ nav li {
   position: relative;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.jingle {
-  padding: 0;
+.far {
+  width: 16px;
+  height: 15px;
 }
 
 .user {
@@ -38,31 +56,4 @@ ul {
   font-size: 13px;
   font-weight: 300;
   padding-left: 7px;
-}
-
-.howtop:hover {
-  background-color: #f5f5f2;
-}
-
-.fa-chevron-down {
-  padding-left: 10px;
-}
-
-.value {
-  font-size: 20px;
-  font-weight: 400;
-  padding-left: 10px;
-  color: #9c9c9c;
-}
-
-.data {
-  color: #9c9c9c;
-  padding-left: 5px;
-}
-
-.arrow {
-  background: #f58220;
-  padding: 10px;
-  color: white;
-  border-radius: 15%;
 }

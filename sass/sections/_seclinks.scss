@@ -1,27 +1,17 @@
 .links {
   display: flex;
   flex-direction: column;
-}
-
-.stats {
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  display: block;
   margin: 20px;
   margin-left: 210px;
 }
 
-.graph {
-  text-align: left;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e3e3e3;
-  color: #a6a6a6;
-  font-family: Roboto;
-  padding-left: 15px;
-  padding-top: 10px;
-  font-size: 16px;
-  font-weight: 500;
+.links p {
+  line-height: 42px;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .addflex {
@@ -52,54 +42,14 @@
   color: #ffffff;
 }
 
-.flexlinks {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.flexlinks a {
-  text-decoration: none;
-  color: skyblue;
-}
-
-.bordlinks {
-  border-bottom: 1px solid #e3e3e3;
-  width: 70vh;
-  display: flex;
-  justify-content: space-between;
-}
-
-.bordlinks:hover {
-  background: whitesmoke;
-}
-
-.leftside {
-  color: #a6a6a6;
-  font-weight: 700;
-  line-height: 42px;
-  padding-left: 20px;
-}
-
-
-.addflex {
-  display: flex;
-  justify-content: center;
-}
-
-.rightwordlinks {
-  color: #56819f;
-  line-height: 42px;
-  float: right;
-}
-
-.rightwordlinks:hover {
-  color: #ffa200;
-  cursor: pointer;
-}
-
 .fish {
   display: flex;
   justify-content: space-evenly;
+}
+
+.fish a {
+  text-decoration: none;
+  color: skyblue;
 }
 
 .razer {
@@ -113,11 +63,34 @@
   background: whitesmoke;
 }
 
-.razer {
-  border-bottom: 1px solid #e3e3e3;
-  width: 70vh;
-  display: flex;
-  justify-content: space-between;
+.leftside {
+  color: #a6a6a6;
+  font-weight: 700;
+  line-height: 42px;
+  padding-left: 20px;
+}
+
+.rightside {
+  text-align: left;
+  color: #333333;
+  width: 25vh;
+  font-family: Roboto;
+  line-height: 42px;
+  margin-right: 187px;
+  justify-content: center;
+  text-align: justify;
+}
+
+.layer {
+  display: inline-block;
+  line-height: 42px;
+  font-size: 13px;
+  color: #999999;
+  display: none;
+}
+
+.razer:hover .layer {
+  display: inline-block;
 }
 
 .razer:hover .rightside {
@@ -126,23 +99,15 @@
   margin-right: unset;
 }
 
-.fish a {
-  text-decoration: none;
-  color: skyblue;
-}
-
-.razer:hover .layer {
-  display: inline-block;
-}
-
-.layer {
-  
-  line-height: 42px;
-  font-size: 13px;
-  color: #999999;
-
-}
-
 .link {
   transform: rotate(45deg);
+}
+
+.fa-trash-alt {
+  margin-left: 30px;
+  margin-right: 28px;
+}
+
+.icona:hover {
+  color: #f58220;
 }
