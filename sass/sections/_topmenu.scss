@@ -33,7 +33,7 @@ nav a {
   text-decoration: none;
   width: 100px;
   padding: 16px;
-  border-left: 1.5px solid #e3e3e3;
+  border-left: 1.5px solid $border-color;
 }
 
 nav a:hover {
@@ -56,4 +56,8 @@ nav li {
   font-size: 13px;
   font-weight: 300;
   padding-left: 7px;
+}
+
+.user:hover {
+  color: #ffa200;
 }

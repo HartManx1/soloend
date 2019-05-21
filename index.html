@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Solo projet</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda:400,700|Roboto:300,400,500,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -18,41 +18,49 @@
                 class="fas fa-bars toggle-menu visible"></a></div>
         <section class="side">
             <ul>
-                <a href="">
-                    <li class="info"><i class="icon fas fa-star"></i><span class="ajax visible">General</span></li>
-                </a>
-                <a href="">
-                    <li class="info"><i class="icon fas fa-th-large"></i><span class="ajax visible">Details</span>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="info"><i class="icon fas fa-link"></i><span class="ajax visible">Links</span></li>
-                </a>
-                <a href="">
-                    <li class="info"><i class="icon fas fa-th"></i><span class="ajax visible">Banners</span></li>
-                </a>
-                <a href="">
-                    <li class="info"><i class="icon fas fa-user-tag"></i><span class="ajax visible">Personal
-                            data</span>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="info"><i class="icon fas fa-dollar-sign"></i><span class="ajax visible">Payout</span>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="info"><i class="icon fas fa-undo"></i><span class="ajax visible">Postback</span></li>
-                </a>
+
+                <li class="info"><a class="info-link" href=""><i class="icon fas fa-star"></i><span
+                            class="ajax visible">General</span></a>
+                </li>
+
+
+                <li class="info"><a class="info-link" href=""><i class="icon fas fa-th-large"></i><span
+                            class="ajax visible">Details</span></a>
+                </li>
+
+
+                <li class="info"><a class="info-link" href=""><i class="icon fas fa-link"></i><span class="ajax visible">Links</span></a>
+                </li>
+
+
+                <li class="info"><a class="info-link" href=""><i class="icon fas fa-th"></i><span class="ajax visible">Banners</span></a>
+                </li>
+
+
+                <li class="info"><a class="info-link" href=""><i class="icon fas fa-user-tag"></i><span class="ajax visible">Personal
+                            data</span></a>
+                </li>
+
+
+                <li class="info"><a class="info-link" href=""><i class="icon fas fa-dollar-sign"></i><span
+                            class="ajax visible">Payout</span></a>
+                </li>
+
+
+                <li class="info"><a class="info-link" href=""><i class="icon fas fa-undo"></i><span
+                            class="ajax visible">Postback</span></a></li>
+
             </ul>
         </section>
         <section class="menager visible">
             <div class="men visible">YOUR MANAGER</div>
             <div class="michael">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-													1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                    alt="emmanuel olisadebe"><a class="">Mikhael E.</a></div>
+                    alt="menager photo"><a class="">Mikhael E.</a></div>
         </section>
         <img class="photo"
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            alt="menager photo">
     </div>
 
     <nav class="top">
@@ -67,9 +75,10 @@
 
     <main class="center">
         <article class="stats">
-            <div class="graph">GENERAL STATISTIC</div>
+            <h2 class="section-title">GENERAL STATISTIC</h2>
             <div class="calendar">
-                <input class="left"><input class="right"><i class="far fa-calendar-alt data"></i>
+                <input value="21.05.2017" class="left"><input value="21.05.2017" class="right"><i
+                    class="far fa-calendar-alt data"></i>
             </div>
             <button class="fas fa-redo-alt btnarrow"></button>
             <section class="numbers bord">
@@ -84,103 +93,103 @@
             </section>
             <section>
                 <h3 class="chart">Earnings chart</h3>
-                <img src="https://zapodaj.net/images/1580d3e100bd2.png">
+                <img src="https://zapodaj.net/images/1580d3e100bd2.png" alt="Earnings chart">
             </section>
         </article>
 
         <article class="links">
-            <div class="graph">LINKS</div>
+            <h2 class="section-title">LINKS</h2>
             <div class="addflex">
                 <button class="button text"><span>+ add new</span></button>
             </div>
             <section class="glob">
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Home page</span><span class="rightside"><a target="_blank"
-                                href="http://www.homepage.com">http://www.homepage.com</a></span>
+                <section id="link">
+                    <div class="reference"><span class="leftside">Home page</span><span class="rightside"><a
+                                target="_blank" href="http://www.homepage.com">http://www.homepage.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Currently offer</span><span class="rightside"><a
+                <section id="link">
+                    <div class="reference"><span class="leftside">Currently offer</span><span class="rightside"><a
                                 target="_blank" href="http://www.currently.com">http://www.currently.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Blurpix</span><span class="rightside"><a target="_blank"
-                                href="http://www.blurpix.com">http://www.blurpix.com</a></span>
+                <section id="link">
+                    <div class="reference"><span class="leftside">Blurpix</span><span class="rightside"><a
+                                target="_blank" href="http://www.blurpix.com">http://www.blurpix.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Your Site</span><span class="rightside"><a target="_blank"
-                                href="https://github.com/inspirer10">https://github.com</a></span>
+                <section id="link">
+                    <div class="reference"><span class="leftside">Your Site</span><span class="rightside"><a
+                                target="_blank" href="https://github.com/inspirer10">https://github.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Google</span><span class="rightside"><a target="_blank"
-                                href="http://www.google.com">http://www.google.com</a></span>
+                <section id="link">
+                    <div class="reference"><span class="leftside">Google</span><span class="rightside"><a
+                                target="_blank" href="http://www.google.com">http://www.google.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Facebook</span><span class="rightside"><a target="_blank"
-                                href="http://www.facebook.com">http://www.facebook.com</a></span>
+                <section id="link">
+                    <div class="reference"><span class="leftside">Facebook</span><span class="rightside"><a
+                                target="_blank" href="http://www.facebook.com">http://www.facebook.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Dashboard</span><span class="rightside"><a target="_blank"
-                                href="http://www.dashboard.com">http://www.dashboard.com</a></span>
+                <section id="link">
+                    <div class="reference"><span class="leftside">Dashboard</span><span class="rightside"><a
+                                target="_blank" href="http://www.dashboard.com">http://www.dashboard.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Blurax</span><span class="rightside"><a target="_blank"
-                                href="http://www.blurax.com">http://www.blurax.com</a></span>
+                <section id="link">
+                    <div class="reference"><span class="leftside">Blurax</span><span class="rightside"><a
+                                target="_blank" href="http://www.blurax.com">http://www.blurax.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Piece of Wine</span><span class="rightside"><a
+                <section id="link">
+                    <div class="reference"><span class="leftside">Piece of Wine</span><span class="rightside"><a
                                 target="_blank" href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>
-                <section class="fish">
-                    <div class="razer"><span class="leftside">Twitter</span><span class="rightside"><a target="_blank"
-                                href="http://www.twitter.com">http://www.twitter.com</a></span>
+                <section id="link">
+                    <div class="reference"><span class="leftside">Twitter</span><span class="rightside"><a
+                                target="_blank" href="http://www.twitter.com">http://www.twitter.com</a></span>
                         <div class="layer">
-                            <i class="icona fas fa-link link"></i>
-                            <i class="icona far fa-trash-alt"></i>
+                            <i class="links-icon fas fa-link link"></i>
+                            <i class="links-icon far fa-trash-alt"></i>
                         </div>
                     </div>
                 </section>

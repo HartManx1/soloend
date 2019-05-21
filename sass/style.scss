@@ -81,7 +81,7 @@ a {
     margin-right: 20px;
   }
 
-  .graph {
+  .section-title {
     text-align: center;
     font-size: 25px;
   }
@@ -116,7 +116,7 @@ a {
     padding-left: 0;
   }
 
-  .razer {
+  .reference {
     flex-direction: column;
     align-items: center;
   }
@@ -209,11 +209,11 @@ a {
     }
   }
 
-  .razer:hover {
+  .reference:hover {
     background: white;
   }
 
-  .razer:hover .rightside {
+  .reference:hover .rightside {
     width: auto;
     margin: 0;
   }
