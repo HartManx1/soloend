@@ -1,13 +1,10 @@
-@import "sass/variables";
-@import "sass/mixins";
-@import "sass/normalize";
 
-@import "components/header";
 
 @import "sections/sidebar";
 @import "sections/topmenu";
 @import "sections/seclinks";
-@import "sections/secgeneral";
+@import "sections/secstats";
+
 
 * {
   box-sizing: border-box;
@@ -20,110 +17,42 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
 }
 
-//RWD 
+.far {
+  width: 16px;
+  height: 15px;
+}
+
+.center {
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 @media (max-width: 768px) {
-  .sidebar {
-    transition: 0.2s;
-    width: 100%;
-    height: 100%;
-    font-size: 80px;
-    overflow: auto;
-
-    &.visible {
-      width: 65px;
-    }
-  }
-
-  .logo {
-    text-align: center;
-    padding-top: 10px;
-
-    &.visible {
-    }
-  }
-
-  .toggle-menu {
-    &.visible {
-      padding-top: 10px;
-      padding-left: 5px;
-    }
-  }
-
-  .info {
-    font-size: 25px;
-    margin: 20px 0;
-    padding-left: 15px;
-  }
-
-  .top {
-    text-align: right;
-    width: 100%;
-    font-size: 23px;
-  }
-
-  .stats {
-    margin-left: 80px;
-    margin-right: 20px;
-  }
-
-  .links {
-    margin-left: 80px;
-    margin-right: 20px;
-  }
-
-  .section-title {
-    text-align: center;
-    font-size: 25px;
-  }
-
-  .calendar {
-    margin: 19px 10px 5px;
-  }
-
-  .btnarrow {
-    margin-bottom: 24px;
-  }
-
-  .data {
-    padding-left: 5px;
-  }
-
-  main img {
-    width: 100%;
-  }
-
-  .value {
-    display: none;
-  }
-
-  .user {
-    display: none;
-  }
-
-  .chart {
-    text-align: center;
-    font-size: 25px;
-    padding-left: 0;
-  }
-
+  
   .reference {
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-align: center;
     align-items: center;
+
+    &:hover {
+      background: white;
+    }
   }
 
   .numbers {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 18px;
   }
@@ -145,9 +74,9 @@ a {
     padding-left: 0px;
   }
 
-  .logo > a {
+  .logo>a {
     font-size: 30px;
-    padding-right: 10px;
+    padding-left: 21vw;
   }
 
   .men {
@@ -156,10 +85,6 @@ a {
     text-align: center;
     font-size: 18px;
     color: white;
-
-    &.visible {
-      display: none;
-    }
   }
 
   .menager {
@@ -178,39 +103,19 @@ a {
 
   .michael {
     padding-left: 41%;
-    display: none;
-
-    &.visible {
-      display: flex;
-    }
+    display: flex;
   }
 
   .photo {
-    display: block;
-
-    &.visible {
-      display: none;
-    }
+    display: none;
   }
 
   .icon {
-    color: #999999;
-
-    &.visible {
-      color: white;
-    }
+    color: white;
   }
 
   .ajax {
     display: inline;
-
-    &.visible {
-      display: none;
-    }
-  }
-
-  .reference:hover {
-    background: white;
   }
 
   .reference:hover .rightside {
@@ -237,9 +142,13 @@ a {
   }
 }
 
-//zmiana dodaj ip5
 @media (max-width: 321px) {
   .calendar {
     padding: 8px;
   }
 }
+
+
+
+
+

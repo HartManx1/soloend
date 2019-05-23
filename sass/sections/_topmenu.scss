@@ -6,19 +6,19 @@
   margin-right: -5px;
 }
 
-.value {
-  font-size: 20px;
-  font-weight: 400;
-  padding-left: 10px;
-  color: #9c9c9c;
+.jingle {
+  padding: 0;
 }
 
 .fa-chevron-down {
   padding-left: 10px;
 }
 
-.jingle {
-  padding: 0;
+.value {
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #9c9c9c;
 }
 
 nav {
@@ -33,21 +33,16 @@ nav a {
   text-decoration: none;
   width: 100px;
   padding: 16px;
-  border-left: 1.5px solid $border-color;
-}
+  border-left: 1.5px solid #e3e3e3;
 
-nav a:hover {
-  color: #ffa200;
+  &:hover {
+      color: #ffa200;
+  }
 }
 
 nav li {
   display: inline-block;
   position: relative;
-}
-
-.far {
-  width: 16px;
-  height: 15px;
 }
 
 .user {
@@ -56,8 +51,8 @@ nav li {
   font-size: 13px;
   font-weight: 300;
   padding-left: 7px;
-}
 
-.user:hover {
-  color: #ffa200;
+  &:hover {
+      color: #ffa200;
+  }
 }

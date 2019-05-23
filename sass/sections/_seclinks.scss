@@ -1,5 +1,7 @@
 .links {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -15,7 +17,9 @@
 }
 
 .addflex {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -29,11 +33,11 @@
   font-size: 16px;
   border-radius: 3px;
   margin: 20px 0 20px 0;
-}
 
-.button:hover {
-  background-color: #ffa200;
-  cursor: pointer;
+  &:hover {
+      background-color: #ffa200;
+      cursor: pointer;
+  }
 }
 
 .text {
@@ -43,28 +47,32 @@
 }
 
 #link {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
 #link a {
   text-decoration: none;
   color: #56819f;
+
+  &:hover {
+      color: #ffa200;
+  }
 }
 
-#link a:hover {
-  color: #ffa200;
+.link {
+  transform: rotate(45deg);
 }
 
-.reference {
-  border-bottom: 1px solid $border-color;
-  width: 70vh;
-  display: flex;
-  justify-content: space-between;
+.fa-trash-alt {
+  margin-left: 30px;
+  margin-right: 28px;
 }
 
-.reference:hover {
-  background: whitesmoke;
+.links-icon:hover {
+  color: #f58220;
 }
 
 .leftside {
@@ -80,6 +88,7 @@
   width: 25vh;
   line-height: 42px;
   margin-right: 187px;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: justify;
 }
@@ -92,6 +101,19 @@
   display: none;
 }
 
+.reference {
+  border-bottom: 1px solid #e3e3e3;
+  width: 70.7vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  &:hover {
+      background: whitesmoke;
+  }
+}
+
 .reference:hover .layer {
   display: inline-block;
 }
@@ -102,15 +124,3 @@
   margin-right: unset;
 }
 
-.link {
-  transform: rotate(45deg);
-}
-
-.fa-trash-alt {
-  margin-left: 30px;
-  margin-right: 28px;
-}
-
-.links-icon:hover {
-  color: #f58220;
-}

@@ -1,3 +1,9 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .sidebar {
   background: #191919;
   color: white;
@@ -7,10 +13,41 @@
   width: 60px;
   position: fixed;
   transition: 0.5s;
+}
 
-  &.visible {
-    transition: 0.2s;
-    width: 188px;
+.sidebar.visible {
+  transition: 0.2s;
+  width: 188px;
+
+  .toggle-menu {
+      padding-right: 10px;
+      transition: 1.5s
+  }
+
+  .ajax {
+      display: inline;
+      padding-right: 20px;
+  }
+
+  .logo {
+      text-align: right;
+  }
+
+  .icon {
+      transition: .5s;
+      color: white;
+  }
+
+  .men {
+      display: block;
+  }
+
+  .menager {
+      display: block;
+  }
+
+  .photo {
+      display: none;
   }
 }
 
@@ -19,36 +56,20 @@
   font-family: "Merienda", cursive;
   font-weight: bold;
   font-size: 23px;
-
-  &.visible {
-    text-align: right;
-  }
 }
 
-.logo>a {
-
-  &.visible {
-    padding-right: 20px;
-  }
+.logo>a.visible {
+  padding-right: 10px;
 }
 
 .ajax {
   display: none;
-
-  &.visible {
-    display: inline;
-  }
 }
 
 .toggle-menu {
   text-decoration: none;
   transition: 1s;
   color: white;
-
-  &.visible {
-    padding-right: 10px;
-    transition: 1.5s;
-  }
 }
 
 .info {
@@ -57,28 +78,16 @@
   height: 40px;
   font-size: 15px;
   color: #999999;
-}
 
-.info:hover {
-  background-color: #282828;
-  border-left: 4px solid #f58220;
-}
-
-.icon {
-  width: 40px;
-  color: white;
-  transition: .5s;
-
-  &.visible {
-    color: grey;
-    transition: .5s;
+  &:hover {
+      background-color: #282828;
+      border-left: 4px solid #f58220;
   }
 }
 
 #manager {
   margin-top: 60px;
 }
-
 
 .men {
   margin-top: 40px;
@@ -90,10 +99,6 @@
   color: #808080;
   padding: 5px 30px;
   display: none;
-
-  &.visible {
-    display: block;
-  }
 }
 
 .michael {
@@ -101,7 +106,9 @@
   font-size: 14px;
   font-weight: 300;
   padding-left: 18px;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -112,16 +119,13 @@
 
 .menager {
   display: none;
-
-  &.visible {
-    display: block;
-  }
 }
 
 .menager img {
   border-radius: 50%;
   width: 43px;
   height: 43px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -131,14 +135,88 @@
   border-radius: 50%;
   width: 43px;
   height: 43px;
+  -o-object-fit: cover;
   object-fit: cover;
-  display: none;
-
-  &.visible {
-    display: block;
-  }
+  display: block;
 }
 
 .info-link {
   color: #a6a6a6;
+}
+
+.icon {
+  color: grey;
+  width: 40px;
+  transition: .5s;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    overflow: auto;
+  }
+
+  .sidebar.visible {
+    width: 65px;
+
+    .toggle-menu {
+      padding-top: 10px;
+      padding-right: 21px;
+      padding-left: 5px;
+    }
+
+    .michael {
+      display: none;
+    }
+
+    .photo {
+      display: block;
+    }
+
+    .men {
+      display: none;
+    }
+
+    .icon {
+      color: #999999;
+    }
+
+    .ajax {
+      display: none;
+    }
+  }
+
+  .logo {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .info {
+    font-size: 25px;
+    margin: 20px 0;
+    padding-left: 15px;
+  }
+
+  .logo>a {
+    font-size: 30px;
+    padding-left: 21vw;
+  }
+
+  .men {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+
+  .menager {
+    display: block;
+  }
+
+
+
 }
