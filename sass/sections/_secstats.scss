@@ -10,7 +10,7 @@
 .section-title {
   text-align: left;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid $border-color;
   color: #a6a6a6;
   padding-left: 15px;
   padding-top: 10px;
@@ -19,7 +19,7 @@
 }
 
 .calendar {
-  border: 1px solid #e3e3e3;
+  border: 1px solid $border-color;
   margin: 20px;
   padding: 10px;
   color: grey;
@@ -49,7 +49,7 @@ input {
 }
 
 .left {
-  border-right: 1px solid #e3e3e3;
+  border-right: 1px solid $border-color;
   font-size: 14px;
 }
 
@@ -70,7 +70,7 @@ input {
   border-radius: 15%;
   border: none;
 
-  &::hover {
+  &:hover {
       background-color: #ffa200;
       cursor: pointer;
   }
@@ -79,17 +79,16 @@ input {
 .numbers {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
 .bord {
-  border-top: 1px solid #e3e3e3;
+  border-top: 1px solid $border-color;
   padding-top: 20px;
 }
 
 .facts {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid $border-color;
   width: 310px;
 }
 
@@ -123,51 +122,88 @@ main img {
   padding-bottom: 40px;
 }
 
-@media (max-width: 768px) { 
+
+@media (max-width: 980px) {
+
+  img {
+      width: 65vw;
+  }
+
+  .facts {
+      width: 25vw;
+  }
+}
+
+
+@media (max-width: 768px) {
   .stats {
-    margin-left: 80px;
-    margin-right: 20px;
-  }
-
-  .links {
-    margin-left: 80px;
-    margin-right: 20px;
-  }
-
-  .section-title {
-    text-align: center;
-    font-size: 25px;
+      margin-left: 80px;
+      margin-right: 20px;
   }
 
   .calendar {
-    margin: 19px 10px 5px;
-  }
-
-  .btnarrow {
-    margin-bottom: 24px;
-  }
-
-  .data {
-    padding-left: 5px;
+      margin: 19px 4px 5px;
   }
 
   main img {
-    width: 100%;
+      width: 100%;
   }
 
-  .value {
-    display: none;
+  .btnarrow {
+      margin-bottom: 24px;
+      margin-right: 5px;
   }
 
-  .user {
-    display: none;
+  .data {
+      padding-left: 5px;
   }
 
   .chart {
-    text-align: center;
-    font-size: 25px;
-    padding-left: 0;
+      text-align: center;
+      font-size: 25px;
+      padding-left: 0;
   }
 
+  .numbers {
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+  }
 
+  .padd {
+      padding-bottom: 60px;
+  }
+
+  .facts {
+      width: 65vw;
+  }
+
+  .right {
+      padding-right: 6px;
+      width: 25vw;
+  }
+
+  .left {
+      padding-right: 6px;
+      width: 25vw;
+  }
+}
+
+
+@media (max-width: 321px) {
+
+  .calendar {
+      padding: 8px;
+  }
+
+  input {
+      padding: 1px;
+  }
+
+  .right {
+      padding-right: 0px;
+      padding-left: 7px;
+  }
 }

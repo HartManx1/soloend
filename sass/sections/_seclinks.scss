@@ -1,7 +1,6 @@
 .links {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -17,9 +16,7 @@
 }
 
 .addflex {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -47,15 +44,16 @@
 }
 
 #link {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  flex-direction: column;
+  margin: auto;
 }
 
 #link a {
   text-decoration: none;
   color: #56819f;
+  //  display: block;   !do ustalenia!
 
   &:hover {
       color: #ffa200;
@@ -88,7 +86,6 @@
   width: 25vh;
   line-height: 42px;
   margin-right: 187px;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: justify;
 }
@@ -102,11 +99,10 @@
 }
 
 .reference {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid $border-color;
   width: 70.7vh;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 
   &:hover {
@@ -124,3 +120,40 @@
   margin-right: unset;
 }
 
+@media (max-width: 768px) {
+
+  .links {
+      margin-left: 80px;
+      margin-right: 20px;
+  }
+
+  .rightside {
+      width: auto;
+      margin-right: 0;
+  }
+
+  .leftside {
+      padding-left: 0px;
+  }
+
+  .reference {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      &:hover {
+          background: white;
+      }
+  }
+
+  .reference:hover .rightside {
+      width: auto;
+      margin: 0;
+  }
+
+  .layer {
+      display: inline-block;
+      margin-left: 10%;
+      font-size: 15px;
+  }
+}

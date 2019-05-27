@@ -1,4 +1,5 @@
-
+@import "sass/variables";
+@import "sass/normalize";
 
 @import "sections/sidebar";
 @import "sections/topmenu";
@@ -27,128 +28,15 @@ a {
 }
 
 .center {
-  display: -ms-flexbox;
   display: flex;
   width: auto;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 @media (max-width: 768px) {
-  
-  .reference {
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
 
-    &:hover {
-      background: white;
-    }
-  }
-
-  .numbers {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 18px;
-  }
-
-  .padd {
-    padding-bottom: 60px;
-  }
-
-  .facts {
-    width: 65vw;
-  }
-
-  .rightside {
-    width: auto;
-    margin-right: 0;
-  }
-
-  .leftside {
-    padding-left: 0px;
-  }
-
-  .logo>a {
-    font-size: 30px;
-    padding-left: 21vw;
-  }
-
-  .men {
-    display: block;
-    margin-top: 20px;
+  .section-title {
     text-align: center;
-    font-size: 18px;
-    color: white;
-  }
-
-  .menager {
-    display: block;
-  }
-
-  .right {
-    padding-right: 6px;
-    width: 25vw;
-  }
-
-  .left {
-    padding-right: 6px;
-    width: 25vw;
-  }
-
-  .michael {
-    padding-left: 41%;
-    display: flex;
-  }
-
-  .photo {
-    display: none;
-  }
-
-  .icon {
-    color: white;
-  }
-
-  .ajax {
-    display: inline;
-  }
-
-  .reference:hover .rightside {
-    width: auto;
-    margin: 0;
-  }
-
-  .layer {
-    display: inline-block;
-    margin-left: 10%;
-    font-size: 15px;
+    font-size: 25px;
   }
 }
-
-@media (max-width: 950px) {
-  img {
-    width: 65vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .michael {
-    padding-left: 33%;
-  }
-}
-
-@media (max-width: 321px) {
-  .calendar {
-    padding: 8px;
-  }
-}
-
-
-
-
-

@@ -3,7 +3,7 @@
 }
 
 .fix {
-  margin-right: -5px;
+  margin-right: 0px;
 }
 
 .jingle {
@@ -33,7 +33,7 @@ nav a {
   text-decoration: none;
   width: 100px;
   padding: 16px;
-  border-left: 1.5px solid #e3e3e3;
+  border-left: 1.5px solid $border-color;
 
   &:hover {
       color: #ffa200;
@@ -54,5 +54,16 @@ nav li {
 
   &:hover {
       color: #ffa200;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .value {
+      display: none;
+  }
+
+  .user {
+      display: none;
   }
 }
