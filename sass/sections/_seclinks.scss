@@ -32,8 +32,8 @@
   margin: 20px 0 20px 0;
 
   &:hover {
-      background-color: #ffa200;
-      cursor: pointer;
+    background-color: #ffa200;
+    cursor: pointer;
   }
 }
 
@@ -56,7 +56,7 @@
   //  display: block;   !do ustalenia!
 
   &:hover {
-      color: #ffa200;
+    color: #ffa200;
   }
 }
 
@@ -83,11 +83,12 @@
 .rightside {
   text-align: left;
   color: #333333;
-  width: 25vh;
   line-height: 42px;
-  margin-right: 187px;
   justify-content: center;
   text-align: justify;
+  width: 50%;
+  margin: auto;
+  margin-right: unset;
 }
 
 .layer {
@@ -95,65 +96,59 @@
   line-height: 42px;
   font-size: 13px;
   color: #999999;
-  display: none;
+  visibility: hidden;
 }
 
 .reference {
   border-bottom: 1px solid $border-color;
-  width: 70.7vh;
+  width: 70vh;
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
 
   &:hover {
-      background: whitesmoke;
+    background: whitesmoke;
   }
 }
 
 .reference:hover .layer {
-  display: inline-block;
-}
-
-.reference:hover .rightside {
-  width: 50%;
-  margin: auto;
-  margin-right: unset;
+  visibility: visible;
 }
 
 @media (max-width: 768px) {
-
   .links {
-      margin-left: 80px;
-      margin-right: 20px;
+    margin-left: 80px;
+    margin-right: 20px;
   }
 
   .rightside {
-      width: auto;
-      margin-right: 0;
+    width: auto;
+    margin-right: auto;
   }
 
   .leftside {
-      padding-left: 0px;
+    padding-left: 0px;
   }
 
   .reference {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
-      &:hover {
-          background: white;
-      }
+    &:hover {
+      background: white;
+    }
   }
 
   .reference:hover .rightside {
-      width: auto;
-      margin: 0;
+    width: auto;
+    margin: 0;
   }
 
   .layer {
-      display: inline-block;
-      margin-left: 10%;
-      font-size: 15px;
+    display: inline-block;
+    margin-left: 10%;
+    font-size: 15px;
+    visibility: visible;
   }
 }
